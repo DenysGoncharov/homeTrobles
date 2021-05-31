@@ -13,7 +13,7 @@ namespace ConsoleApp1
 
             int x = rdm.Next(0, Console.WindowWidth);
             int y = rdm.Next(0, Console.WindowHeight);
-            int period = rdm.Next(50, 500);
+            int period = rdm.Next(100, 500);
 
             while (true)
             //for (int i = 0; i < 20; i++)
@@ -27,7 +27,7 @@ namespace ConsoleApp1
                     // Console.WriteLine(new string(' ', 10) + "Secondary");
                     for (int j = 0; j < k; j++)
                     {
-                        Console.WriteLine(new string(' ', x) + ((char)rdm.Next(0, 255)));
+                        Console.WriteLine(new string(' ', x) + ((char)rdm.Next(0, 525)));
                         Thread.Sleep(5);
                     }
                     Console.ForegroundColor = ConsoleColor.Green;
@@ -66,7 +66,7 @@ namespace ConsoleApp1
 
 
             WriteSecond();
-           
+
 
             // Delay.
             Console.ReadKey();
